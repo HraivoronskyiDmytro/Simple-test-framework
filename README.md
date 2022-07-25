@@ -21,6 +21,7 @@ used:
 
 - Docker Engine to run the tests out of the box 
 
+
 To run test pleaase run: ./gradlew chrome  ( will be used Chrome browser)
 
 Default TestNG report  - /build/reports/tests/test/index.html
@@ -36,9 +37,16 @@ To see Allure report:
 
 ./gradlew allureServe
 
+- Screenshots on testFail
+
+- Video record is available for each execution (at the root of the project)
+
+- Test data for dataprovider are located in CSV file next to the test class
+
 **CI INTEGRATION**
 
 added .travis.yml to have possibility to run on TRAVIS-CI
+added  github actions .github/workflows/gradle.yml to run the project on github actions
 
 **Possible to run test in**
 
@@ -51,4 +59,8 @@ Edge  -  ./gradlew edge
 
 **Possible code improvements**
 - store URLs in CSV
+
+- rework video and integrate it to the report
+
+- detailed configuration of the Jacoco report 
 

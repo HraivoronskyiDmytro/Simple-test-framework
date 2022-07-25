@@ -1,0 +1,3 @@
+Name,Locator
+Submit,//button[@type='submit']
+Date,//input[@name='monthYearFirstRegistered']

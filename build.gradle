@@ -1,0 +1,62 @@
+plugins {
+    id 'java'
+    id 'io.qameta.allure' version "2.9.6"
+    id 'jacoco'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'io.qameta.allure:allure-testng:2.18.1'
+    implementation 'org.slf4j:slf4j-simple:1.7.36'
+    implementation 'io.github.bonigarcia:webdrivermanager:5.2.1'
+    implementation 'org.seleniumhq.selenium:selenium-java:4.3.0'
+    implementation 'org.seleniumhq.selenium:selenium-support:4.3.0'
+    implementation 'org.testng:testng:7.6.1'
+    implementation 'org.apache.commons:commons-csv:1.9.0'
+}
+
+test {
+
+}
+
+jacocoTestReport {
+    description = "Generate Jacoco coverage report"
+    executionData test
+}
+
+tasks.withType(Test).all { testTask ->
+
+    jacoco {
+        destinationFile = file("$buildDir/jacoco/testNG.exec")
+    }
+    finalizedBy jacocoTestReport
+
+}
+
+task chrome(type: Test) {
+    useTestNG()
+    options {
+        systemProperty("browser","chrome")
+    }
+
+}
+
+task firefox(type: Test) {
+    useTestNG()
+    options {
+        systemProperty("browser","firefox")
+    }
+}
+
+task edge(type: Test) {
+    useTestNG()
+    options {
+        systemProperty("browser","edge")
+    }
+}

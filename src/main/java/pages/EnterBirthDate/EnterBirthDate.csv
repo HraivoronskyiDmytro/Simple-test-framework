@@ -1,0 +1,4 @@
+Name,Locator
+BirthDateInput,//input[@name='birthDate']
+Submit,//button[@type='submit']
+Title,//*[@data-test-id='wizardTitle']

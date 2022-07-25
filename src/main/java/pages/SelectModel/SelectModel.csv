@@ -1,0 +1,5 @@
+Name,Locator
+InputModel,//input[@name='modelFilter']
+FirstModel,(//button[@name='model'])[1]
+
+

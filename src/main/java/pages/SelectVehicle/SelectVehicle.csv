@@ -1,0 +1,4 @@
+Name,Locator
+Search,//button[@name='list']
+InputManufacturer,//input[@name='makeFilter']
+FirstManufacturer,(//button[@name='make'])[1]

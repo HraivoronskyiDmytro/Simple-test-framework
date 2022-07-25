@@ -1,0 +1,3 @@
+Name,Locator
+Agree Cookie,//*[@data-testid='uc-accept-all-button'],
+Submit,//button[@type='submit']

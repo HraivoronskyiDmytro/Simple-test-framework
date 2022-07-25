@@ -1,0 +1,2 @@
+Name,Locator
+FirstBodyType,(//button[@name='bodyType'])[1]

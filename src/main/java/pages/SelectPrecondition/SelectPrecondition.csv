@@ -1,0 +1,4 @@
+Name,Locator
+Agree Cookie,//*[@data-testid='uc-accept-all-button'],
+Cookie banner,#usercentrics-root
+Submit,//button[@type='submit']

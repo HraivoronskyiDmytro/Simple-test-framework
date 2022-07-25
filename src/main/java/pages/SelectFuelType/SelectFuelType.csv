@@ -1,0 +1,2 @@
+Name,Locator
+FirstFuelType,(//button[@name='fuelType'])[1]

@@ -1,4 +1,4 @@
-# Simple-test-framework
+# Simple-test-framework-solution
 
 
 used:
@@ -69,7 +69,16 @@ Edge  -  ./gradlew edge
 
 ---
 
+Framework-solution structure :
 
+/src/main/java/framework - basic components basic page\test\listener\utils for framework solution.
+
+/src/main/java/pages - useractions grouped by pages. for each page there is appropriate CSV file with locatiors.
+
+/src/test/java/tests - tests directory. here also CSV file for data parameters for test.
+
+
+---
 **Possible code improvements**
 - store URLs in CSV
 

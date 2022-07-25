@@ -13,10 +13,9 @@ public class SelectModel extends BasePage {
 
     @Override
     public void waitUntilPageLoads() {
-//        element("Homepage Content").shouldBe(Condition.visible);
+
     }
 
-    //
     @Step("Select {0} Model ")
     public void selectModel(String name) {
         waitElement("InputModel");

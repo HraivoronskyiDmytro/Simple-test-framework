@@ -88,4 +88,6 @@ Framework-solution structure :
 
 - implement waitUntilPageLoads() for each page.
 
+- publish test results 
+
 

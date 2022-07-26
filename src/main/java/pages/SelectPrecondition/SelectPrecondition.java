@@ -28,7 +28,7 @@ public class SelectPrecondition extends BasePage {
     public void clickAgreeCookie() {
         ExpectedCondition<Boolean> expectation = driver -> ((JavascriptExecutor) driver).executeScript("return document.readyState").toString().equals("complete");
         try {
-            Thread.sleep(2000); //value found empirically to wait for cookie banner
+            Thread.sleep(3000); //value found empirically to wait for cookie banner
             WebDriverWait wait = new WebDriverWait(driver, Duration.ofMillis(90));
             wait.until(expectation);
         } catch (Throwable error) {
